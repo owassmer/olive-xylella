@@ -1,0 +1,142 @@
+{
+  "file": "/Users/owenwassmer/Desktop/Connor/olive-xylella/raw/data/CAMP_2020_2022.csv",
+  "bytes_on_disk": 40091648,
+  "expected_full_bytes": 81999815,
+  "complete": false,
+  "n_complete_rows": 335947,
+  "n_cols": 11,
+  "columns": [
+    {
+      "column": "ID",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "730508",
+        "730510",
+        "730512",
+        "730513",
+        "730514",
+        "730518"
+      ]
+    },
+    {
+      "column": "DATA_RILEVAMENTO",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "03/02/2020",
+        "07/02/2020",
+        "11/02/2020",
+        "12/02/2020",
+        "13/02/2020",
+        "29/01/2020"
+      ]
+    },
+    {
+      "column": "TIPOLOGIA",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "Campione"
+      ]
+    },
+    {
+      "column": "SPECIE",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "Alaterno (Rhamnus alaternus)",
+        "Alloro (Laurus nobilis)",
+        "Asparago selvatico (Asparagus acutifolius)",
+        "Fillirea (Phillyrea latifolia)",
+        "Mandorlo (Prunus dulcis)",
+        "Oleandro (Nerium Oleander)"
+      ]
+    },
+    {
+      "column": "CULTIVAR",
+      "empty": 35386,
+      "empty_pct": 10.533,
+      "examples": [
+        "Altro",
+        "Cellina di Nardò",
+        "Cima di Melfi",
+        "Leccino",
+        "Nociara",
+        "Ogliarola barese"
+      ]
+    },
+    {
+      "column": "LATITUDINE",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "40,57929923",
+        "40,57930509",
+        "40,67361199",
+        "40,69692274",
+        "40,70951245",
+        "40,71017425"
+      ]
+    },
+    {
+      "column": "LONGITUDINE",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "17,3228927",
+        "17,32312649",
+        "17,67539612",
+        "17,67589688",
+        "17,68583313",
+        "17,72236012"
+      ]
+    },
+    {
+      "column": "COMUNE",
+      "empty": 7,
+      "empty_pct": 0.002,
+      "examples": [
+        "Carovigno",
+        "Crispiano",
+        "Fasano",
+        "Francavilla Fontana",
+        "Massafra",
+        "Montemesola"
+      ]
+    },
+    {
+      "column": "RISULTATO",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "Negativo",
+        "Positivo"
+      ]
+    },
+    {
+      "column": "SINTOMO",
+      "empty": 64,
+      "empty_pct": 0.019,
+      "examples": [
+        "ASSENTE",
+        "Assente",
+        "PRESENTE",
+        "Presente"
+      ]
+    },
+    {
+      "column": "PROVINCIA",
+      "empty": 0,
+      "empty_pct": 0.0,
+      "examples": [
+        "#N/D",
+        "Bari",
+        "Barletta-Andria-Trani",
+        "Brindisi",
+        "Foggia",
+        "Taranto"
+      ]
+    }
+  ]
+}

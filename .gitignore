@@ -1,0 +1,13 @@
+# regenerable bulk
+raw/data/*.csv
+raw/data/*.zip
+raw/data/*.gpkg
+raw/data/*.tif
+raw/data/*.nc
+raw/papers/*.pdf
+raw/articles/*.html
+nowcast/cache/
+.DS_Store
+__pycache__/
+*.pyc
+.env

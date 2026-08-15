@@ -1,0 +1,93 @@
+{
+  "n_complete_rows_partial_file": 335947,
+  "date_min": "20200120",
+  "date_max": "20210928",
+  "years": {
+    "2020": 176505,
+    "2021": 159442
+  },
+  "result": {
+    "Negativo": 332974,
+    "Positivo": 2973
+  },
+  "olive_n": 304541,
+  "olive_pos": 2938,
+  "olive_joinable": 304541,
+  "lat_min": 40.38713227,
+  "lat_max": 41.43830502,
+  "lon_min": 15.69977067,
+  "lon_max": 17.77596608,
+  "n_species": 32,
+  "top_species": [
+    [
+      "Olivo (Olea europaea)",
+      300732
+    ],
+    [
+      "Mandorlo (Prunus dulcis)",
+      9267
+    ],
+    [
+      "Ciliegio (Prunus avium)",
+      5547
+    ],
+    [
+      "Asparago selvatico (Asparagus acutifolius)",
+      5084
+    ],
+    [
+      "Oleandro (Nerium Oleander)",
+      3809
+    ],
+    [
+      "Rosmarino (Rosmarinus officinalis)",
+      2520
+    ],
+    [
+      "Fillirea (Phillyrea latifolia)",
+      2405
+    ],
+    [
+      "Altro",
+      2125
+    ],
+    [
+      "Agrume (Citrus)",
+      1036
+    ],
+    [
+      "Alaterno (Rhamnus alaternus)",
+      895
+    ],
+    [
+      "Alloro (Laurus nobilis)",
+      854
+    ],
+    [
+      "Cisto rosso (Cistus creticus)",
+      468
+    ],
+    [
+      "Acacia saligna (Acacia saligna Labill. Wendl.)",
+      221
+    ],
+    [
+      "Ginestra (Spartium junceum)",
+      200
+    ],
+    [
+      "Poligala (Polygala myrtifolia)",
+      184
+    ]
+  ],
+  "provinces": {
+    "Brindisi": 147580,
+    "Taranto": 84766,
+    "Bari": 100191,
+    "#N/D": 7,
+    "Barletta-Andria-Trani": 3392,
+    "Foggia": 11
+  },
+  "crs_inferred": "EPSG:4326 WGS84 geographic; comma decimal; NOT projected",
+  "label_grain": "tree/sample point — lat/lon present on essentially all rows"
+}
