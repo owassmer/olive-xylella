@@ -2,49 +2,34 @@
 
 Question: how many days before an official positive diagnostic result does out-of-area discrimination stay above matched negative controls?
 
-## Cohort
+## Rules
 
-- Labels: `raw/data/camp_xlsx/CAMP_*.xlsx`. Olive, finite lat/lon, dated result.
-- Call `RISULTATO` a diagnostic label, not PCR, until the assay is read per campaign.
-- First geography: Crecco Brindisi footprint if overlap n is usable. Else 2021 tile 34TBL with crowns from Puglia Export Image.
+- Labels: campaign xlsx. Diagnostic result, not named assay until read.
+- First geography: 2021 olives in the Crecco Brindisi bbox.
+- Match: ±30 days; same comune else ≤5 km; cultivar when both known; ≥60 m apart (different 20 m SWIR cell).
+- Crown area: not used while Crecco is points only.
+- Lags: −365, −180, −90, −60, −30, 0, +90 days from the positive’s diagnostic date.
+- Move: |Cliff δ| ≥ 0.15 and p < 0.05 on NDMI. Hold out whole comuni.
+- Do not train a classifier. Do not pool 2024 non-olive positives.
 
-## Matching
+## 2021 Crecco-box table (current)
 
-Each positive matched to negatives that share:
+1,683 pos, 1,917 neg, **1,679** matches (4 unmatched). Same comune 1,675. Cultivar locked 457. Median distance 68 m.
 
-- sample window ±30 days
-- same comune, else ≤5 km
-- cultivar when both non-empty
-- similar VHR crown area
-- similar Landsat LST / neighborhood S2 NDMI on the same date
+NDMI, SCL-ok both arms:
 
-Unmatched positives stay in a residual table.
+| Lag | n | δ | p |
+|---:|---:|---:|---:|
+| −365 | 331 | +0.05 | 0.31 |
+| −180 | 902 | −0.05 | 0.08 |
+| −90 | 1330 | −0.08 | 0.002 |
+| −60 | 1325 | −0.07 | 0.005 |
+| −30 | 1313 | −0.05 | 0.030 |
+| 0 | 1325 | −0.07 | 0.003 |
+| +90 | 1164 | +0.03 | 0.25 |
 
-## Time stamps (days from diagnostic date)
+No lag meets the bar. −90…0: positives slightly drier, small effect. Cisternino (only other comune with n≥30) does not replicate; p-values are Ostuni-driven.
 
-−365, −180, −90, −60, −30, 0, +90.
+STAC scenes used start 2020-10-31. −365 is thin.
 
-## Features
-
-S2 B04/B05/B08/B11/B12, SCL, NDVI, NDRE, NDMI, 3×3 mean/SD, veg fraction, residual vs own prior-year DOY, residual vs matched negatives same date. S1 VV/VH if a scene exists within 6 days. Landsat LST as drought context (100 m native). Crown fraction from nearest Puglia orthophoto year.
-
-Unmix S2 with VHR fractions. Do not super-resolve SWIR.
-
-## Endpoints
-
-Out-of-area AUROC or Cliff δ on NDMI residual at −30, −60, −90 days. Hold out whole comuni, then a later campaign. No random neighbor split.
-
-## Verdicts
-
-- Dies at 0 days after matching: monitoring only.
-- Survives 30–60 days: pre-diagnostic.
-- Survives 90+ days: strong.
-- Dies after drought/cultivar match: close Artifact A.
-
-## F7 (first table)
-
-Symptom-absent olive + vs −, 2021-06-01..2021-09-15, tile 34TBL, SCL in {4,5,7}. Same Cliff/p rule as the one-scene test, plus comune-blocked p. Scenes 12 Aug and 22 Aug 2021. Stop if SCL-valid F7+ n < 40.
-
-## Not in this file
-
-Classifier training. 2024–25 mixed-subspecies pooling. Bari email.
+Files: `nowcast/cache/experiment1_matches_2021.csv`, `experiment1_lags_2021.csv`.
