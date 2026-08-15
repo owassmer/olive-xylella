@@ -30,8 +30,8 @@ The earlier unpaired table reported p 0.002–0.03 at −90…0. Those p-values 
 
 ## Verdict
 
-**Negative.** After matching on place, date, and cultivar, and with spatially honest inference, public Sentinel-2 NDMI shows no pre-diagnostic signal at any tested lag in the 2021 Crecco-box cohort. Median Δ is −0.006 to −0.012 at −90…0 days: the direction is drier-positive but the magnitude is ~1% of the index range and indistinguishable from spatial noise.
+**Negative for branch A0** (raw paired absolute NDMI at 10/20 m). After matching on place, date, and cultivar, and with spatially honest inference, there is no pre-diagnostic signal at any tested lag in the 2021 Crecco-box cohort. Median Δ is −0.006 to −0.012 at −90…0 days, indistinguishable from spatial noise.
 
-The public-S2 previsual branch of Artifact A is closed. A 2022 northward transfer test is moot: there is no surviving signal to transfer. Finer-grained claims (crown unmixing, WV-3 SWIR, PRISMA) would need a different physical measurement, not more analysis of these pixels.
+This closes one hypothesis, not Artifact A. The null does not distinguish "no precursor exists" from "20 m SWIR mixing destroys it" — a crown contributing 20–30% of a 400 m² pixel dilutes any within-crown change below this design's sensitivity. Open branches and the discriminating tests are in `nowcast/ARTIFACT_A.md` (temporal anomaly A1, crown-fraction dependence A2, Crecco crown-scale rasters A3, WV-3 SWIR A4, airborne physiology A5). A 2022 transfer test waits on a surviving signal.
 
 Files: `nowcast/cache/experiment1_paired.json`, `experiment1_matches_2021.csv`, `experiment1_lags_2021.csv`. Scripts: `experiment1_match.py`, `experiment1_extract.py`, `experiment1_paired.py`.
