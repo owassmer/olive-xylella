@@ -145,21 +145,24 @@ def cliffs_delta(x, y):
 
 
 def mw_u_p(x, y, n_perm=2000):
-    """Two-sided permutation p on Mann–Whitney U (no scipy)."""
+    """Two-sided permutation p on Mann–Whitney U. Ties count 0.5. Label-shuffle, not rank-shuffle."""
     x = np.asarray(x, float)
     y = np.asarray(y, float)
-    allv = np.concatenate([x, y])
+
+    def u_stat(a, b):
+        return float(np.sum(a[:, None] > b[None, :]) + 0.5 * np.sum(a[:, None] == b[None, :]))
+
+    u_obs = u_stat(x, y)
+    pooled = np.concatenate([x, y])
     n1 = len(x)
-    ranks = allv.argsort().argsort() + 1.0
-    u_obs = ranks[:n1].sum() - n1 * (n1 + 1) / 2.0
     rng = np.random.default_rng(SEED)
     extreme = 0
     null_center = n1 * len(y) / 2.0
     obs = abs(u_obs - null_center)
     for _ in range(n_perm):
-        rng.shuffle(ranks)
-        u = ranks[:n1].sum() - n1 * (n1 + 1) / 2.0
-        if abs(u - null_center) >= obs:
+        rng.shuffle(pooled)
+        u = u_stat(pooled[:n1], pooled[n1:])
+        if abs(u - null_center) >= obs - 1e-12:
             extreme += 1
     return float(u_obs), float((extreme + 1) / (n_perm + 1))
 
