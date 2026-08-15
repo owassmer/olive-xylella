@@ -47,7 +47,19 @@
 - Inventories refreshed; Day-1 gate still PASS
 
 
-## [2026-08-15] create | Seed entity/concept pages
+## [2026-08-15] ingest | Owen-fetched PDFs
+
+- raw/papers/zarco-tejada-2018-natureplants.pdf
+- raw/papers/efsa-2016-treatments.pdf
+
+## [2026-08-15] update | One-scene Sentinel join
+
+- Scene S2A_34TBL_20210812_0_L2A via Earth Search public COGs
+- 50/50 usable olives, summer 2021, SCL-valid
+- NDMI moves (Cliff δ −0.312, p=0.008). NDVI does not. NDRE direction only.
+- nowcast/SCENE_JOIN.md, nowcast/join_one_scene.py, nowcast/cache/scene_join_100.csv
+- emergenzaxylella remains SSO-gated; not required for the join
+
 
 - entities: xylella-fastidiosa, philaenus-spumarius, leccino, cnr-ipsp
 - concepts: oqds, resistance-not-immunity, previsual-detection, front-nowcast, resistance-decoder, puglia-monitoring, camp-csv

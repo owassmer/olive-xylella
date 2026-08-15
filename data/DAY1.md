@@ -35,9 +35,11 @@ Sentinel-2: Planetary Computer STAC returned live L2A items over this bbox (tile
 |---|---|---|
 | CAMP_2020_2022.csv | CLOSED — full file verified | 688,631 rows, through 30 Jun 2023 |
 | CAMP_2020_2023.csv (separate CKAN resource) | ACCESS_BLOCKED — url empty | redundant; 2023 already in the 2020–2022 file |
-| emergenzaxylella.it maps | ACCESS_BLOCKED — connection reset | no official polygon layer yet |
-| Zarco-Tejada 2018 PDF, EFSA 2016 PDF | Cloudflare | use extracted/OA copies |
+| Zarco-Tejada 2018 PDF | CLOSED — Owen-fetched preprint | `raw/papers/zarco-tejada-2018-natureplants.pdf` |
+| EFSA 2016 PDF | CLOSED — Owen-fetched | `raw/papers/efsa-2016-treatments.pdf` |
+| Sentinel-2 pixels | CLOSED — Earth Search public COGs | no CDSE account needed |
+| emergenzaxylella.it maps | ACCESS_BLOCKED — regional SSO (JOSSO) | not required for the join; tree coords are in CAMP. Human login if we ever need official polygons. |
 
 ## So what
 
-We do **not** downgrade to comune nowcast. We proceed tree-level. Class is rare (0.86% olive-positive) and **collapses after 2021**. Evaluation is precision-recall, never accuracy, and the 2022–23 hold-out must be paired with a 2020–21 spatial fold. Next build step is the feature-join script against one Sentinel scene.
+We do **not** downgrade to comune nowcast. We proceed tree-level. Class is rare (0.86% olive-positive) and **collapses after 2021**. Evaluation is precision-recall, never accuracy, and the 2022–23 hold-out must be paired with a 2020–21 spatial fold. One-scene join is done: see `nowcast/SCENE_JOIN.md`. NDMI moves; NDVI does not.

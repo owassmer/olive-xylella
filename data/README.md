@@ -10,7 +10,7 @@ This directory holds **inventories, licenses, and derived summaries** — the ev
 | Regione Puglia CKAN, Sezione Osservatorio Fitosanitario | CAMP monitoring CSV (file name 2020–2022; rows through 30 Jun 2023) | Italian open data / CKAN dataset `dati-monitoraggio-xylella-fastidiosa`. Reuse: cite Regione Puglia – Osservatorio Fitosanitario. | `raw/data/CAMP_2020_2022.csv` (complete, 81,999,815 bytes) |
 | Same package | CAMP_2020_2023.csv | Listed, **URL empty**. Cannot download. | — |
 | emergenzaxylella.it | Official maps | Site connection-reset from this host 2026-08-15 | — |
-| Copernicus Sentinel-2 L2A | 10 m imagery | Free and open Copernicus license via CDSE or Planetary Computer | not yet downloaded |
+| Copernicus / Earth Search Sentinel-2 L2A | 10 m imagery | Free public COGs via Element84 Earth Search (no account) | sampled, not stored |
 | Microsoft Planetary Computer | STAC catalog of S2 | Free catalog search proven; signed asset URLs for pixels | catalog only |
 
 ## Files here

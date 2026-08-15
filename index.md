@@ -26,6 +26,7 @@
 ## Datasets / methods
 
 - [[camp-csv]] — CAMP_2020_2022 tree-level PCR
+- nowcast/SCENE_JOIN.md — one-scene NDMI/NDVI test
 
 ## Queries
 
