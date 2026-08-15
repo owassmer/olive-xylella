@@ -1,0 +1,254 @@
+[
+  {
+    "id": "2013–14",
+    "file": "CAMP_2013_2014.xlsx",
+    "date_min": "2013-11-13",
+    "date_max": "2014-10-27",
+    "n": 10879,
+    "n_olive": 8557,
+    "n_olive_pos": 188,
+    "n_olive_pos_assente": 0,
+    "n_other_pos": 60,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 185,
+    "n_comuni_with_olive_pos": 31,
+    "top": [
+      "Trepuzzi",
+      "Galatina",
+      "Lecce"
+    ]
+  },
+  {
+    "id": "2014–15",
+    "file": "CAMP_2014_2015.xlsx",
+    "date_min": "2014-10-08",
+    "date_max": "2015-12-23",
+    "n": 51409,
+    "n_olive": 49364,
+    "n_olive_pos": 4173,
+    "n_olive_pos_assente": 843,
+    "n_other_pos": 18,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 89,
+    "n_comuni_with_olive_pos": 50,
+    "top": [
+      "Trepuzzi",
+      "Torchiarolo",
+      "Campi Salentina"
+    ]
+  },
+  {
+    "id": "2016–17",
+    "file": "CAMP_2016_2017.xlsx",
+    "date_min": "2016-02-03",
+    "date_max": "2017-05-25",
+    "n": 159109,
+    "n_olive": 145419,
+    "n_olive_pos": 1576,
+    "n_olive_pos_assente": 250,
+    "n_other_pos": 12,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 104,
+    "n_comuni_with_olive_pos": 60,
+    "top": [
+      "Oria",
+      "Francavilla Fontana",
+      "Gallipoli"
+    ]
+  },
+  {
+    "id": "2017–18",
+    "file": "CAMP_2017_2018.xlsx",
+    "date_min": "2017-07-31",
+    "date_max": "2018-05-08",
+    "n": 198768,
+    "n_olive": 174040,
+    "n_olive_pos": 3828,
+    "n_olive_pos_assente": 1664,
+    "n_other_pos": 7,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 95,
+    "n_comuni_with_olive_pos": 21,
+    "top": [
+      "Oria",
+      "Francavilla Fontana",
+      "Ceglie Messapica"
+    ]
+  },
+  {
+    "id": "2018–19",
+    "file": "CAMP_2018_2019.xlsx",
+    "date_min": "2018-11-05",
+    "date_max": "2019-07-26",
+    "n": 68500,
+    "n_olive": 54437,
+    "n_olive_pos": 1072,
+    "n_olive_pos_assente": 444,
+    "n_other_pos": 2,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 61,
+    "n_comuni_with_olive_pos": 15,
+    "top": [
+      "Carovigno",
+      "San Vito Dei Normanni",
+      "Ostuni"
+    ]
+  },
+  {
+    "id": "2019–20",
+    "file": "CAMP_2019_2020.xlsx",
+    "date_min": "2019-08-01",
+    "date_max": "2020-04-30",
+    "n": 50967,
+    "n_olive": 41399,
+    "n_olive_pos": 1371,
+    "n_olive_pos_assente": 453,
+    "n_other_pos": 25,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 33,
+    "n_comuni_with_olive_pos": 17,
+    "top": [
+      "Carovigno",
+      "Ostuni",
+      "Montemesola"
+    ]
+  },
+  {
+    "id": "2020",
+    "file": "CAMP_2020.xlsx",
+    "date_min": "2020-04-30",
+    "date_max": "2021-03-05",
+    "n": 172005,
+    "n_olive": 163027,
+    "n_olive_pos": 1196,
+    "n_olive_pos_assente": 493,
+    "n_other_pos": 9,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 36,
+    "n_comuni_with_olive_pos": 16,
+    "top": [
+      "Ostuni",
+      "Cisternino",
+      "Fasano"
+    ]
+  },
+  {
+    "id": "2021",
+    "file": "CAMP_2021.xlsx",
+    "date_min": "2021-05-26",
+    "date_max": "2022-02-03",
+    "n": 219120,
+    "n_olive": 189353,
+    "n_olive_pos": 2793,
+    "n_olive_pos_assente": 613,
+    "n_other_pos": 7,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 78,
+    "n_comuni_with_olive_pos": 12,
+    "top": [
+      "Ostuni",
+      "Cisternino",
+      "Fasano"
+    ]
+  },
+  {
+    "id": "2022",
+    "file": "CAMP_2022.xlsx",
+    "date_min": "2022-06-09",
+    "date_max": "2023-06-30",
+    "n": 266352,
+    "n_olive": 227770,
+    "n_olive_pos": 358,
+    "n_olive_pos_assente": 151,
+    "n_other_pos": 8,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 26,
+    "n_comuni_with_olive_pos": 9,
+    "top": [
+      "Fasano",
+      "Castellana Grotte",
+      "Monopoli"
+    ]
+  },
+  {
+    "id": "2023",
+    "file": "CAMP_2023.xlsx",
+    "date_min": "2023-07-18",
+    "date_max": "2024-03-11",
+    "n": 62876,
+    "n_olive": 56885,
+    "n_olive_pos": 189,
+    "n_olive_pos_assente": 53,
+    "n_other_pos": 0,
+    "n_pauca_pos": 0,
+    "n_fast_pos": 0,
+    "n_mult_pos": 0,
+    "n_comuni": 14,
+    "n_comuni_with_olive_pos": 6,
+    "top": [
+      "Monopoli",
+      "Fasano",
+      "Polignano A Mare"
+    ]
+  },
+  {
+    "id": "2024",
+    "file": "CAMP_2024.xlsx",
+    "date_min": "2024-01-23",
+    "date_max": "2024-12-20",
+    "n": 119723,
+    "n_olive": 59702,
+    "n_olive_pos": 154,
+    "n_olive_pos_assente": 41,
+    "n_other_pos": 959,
+    "n_pauca_pos": 157,
+    "n_fast_pos": 339,
+    "n_mult_pos": 617,
+    "n_comuni": 37,
+    "n_comuni_with_olive_pos": 10,
+    "top": [
+      "Crispiano",
+      "Massafra",
+      "Castellana Grotte"
+    ]
+  },
+  {
+    "id": "2025",
+    "file": "CAMP_2025.xlsx",
+    "date_min": "2025-01-07",
+    "date_max": "2025-12-19",
+    "n": 121860,
+    "n_olive": 105554,
+    "n_olive_pos": 338,
+    "n_olive_pos_assente": 104,
+    "n_other_pos": 58,
+    "n_pauca_pos": 340,
+    "n_fast_pos": 20,
+    "n_mult_pos": 36,
+    "n_comuni": 62,
+    "n_comuni_with_olive_pos": 12,
+    "top": [
+      "Cagnano Varano",
+      "Bari",
+      "Valenzano"
+    ]
+  }
+]

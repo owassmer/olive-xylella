@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CORDON Front</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ink: #e8e0d4;
+      --muted: #8a8276;
+      --paper: #14110e;
+      --panel: #1c1814;
+      --line: #3a342c;
+      --rust: #c45c26;
+      --gold: #d4a24a;
+      --ash: #6b6560;
+      --violet: #8b7cb8;
+      --ok: #7a9a6a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: var(--paper); color: var(--ink);
+      font-family: "IBM Plex Sans", sans-serif; font-size: 13px; }
+    #map { position: absolute; inset: 0; background: #0b0a09; }
+    .leaflet-container { background: #0b0a09; font: inherit; }
+    .chrome { position: absolute; z-index: 500; pointer-events: none; }
+    .chrome > * { pointer-events: auto; }
+    header {
+      top: 16px; left: 16px;
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 12px 16px 10px; max-width: 280px;
+    }
+    header h1 {
+      font-family: "Source Serif 4", serif; font-size: 22px; font-weight: 600;
+      letter-spacing: -0.02em; line-height: 1.1;
+    }
+    header p { color: var(--muted); margin-top: 6px; font-size: 12px; line-height: 1.4; }
+    #caption {
+      top: 16px; right: 16px; left: auto;
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 12px 16px; max-width: 340px;
+    }
+    #caption .who { color: var(--rust); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+    #caption h2 { font-family: "Source Serif 4", serif; font-size: 18px; font-weight: 600; margin: 4px 0 6px; }
+    #caption p { color: var(--muted); line-height: 1.45; }
+    #rail {
+      bottom: 88px; left: 16px;
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 12px 14px; width: 240px;
+    }
+    .stat { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid #2a2622; }
+    .stat:last-of-type { border-bottom: 0; }
+    .stat b { font-variant-numeric: tabular-nums; font-weight: 600; }
+    .stat.rust b { color: var(--rust); }
+    .stat.gold b { color: var(--gold); }
+    .stat.violet b { color: var(--violet); }
+    fieldset { border: 0; margin-top: 10px; }
+    fieldset label { display: flex; align-items: center; gap: 8px; padding: 3px 0; color: var(--muted); cursor: pointer; }
+    fieldset input { accent-color: var(--rust); }
+    #scrub {
+      left: 0; right: 0; bottom: 0;
+      background: linear-gradient(transparent, #0b0a09 30%);
+      padding: 28px 24px 18px 272px;
+    }
+    #ticks { display: flex; justify-content: space-between; margin-bottom: 6px; color: var(--muted); font-size: 11px; }
+    #ticks span { cursor: pointer; }
+    #ticks span.on { color: var(--ink); }
+    input[type=range] { width: 100%; accent-color: var(--rust); }
+    .dot-legend { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+    a.quiet { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+    a.quiet:hover { color: var(--ink); }
+    .note { font-size: 11px; color: var(--muted); margin-top: 8px; line-height: 1.35; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <header class="chrome">
+    <h1>CORDON Front</h1>
+    <p>Official tests, not a forecast. Each frame is one monitoring campaign. Lecce leaves the clipboard after 2018.</p>
+    <p class="note"><a class="quiet" href="../data/CAMP_XLSX.md">How to read the numbers</a></p>
+  </header>
+  <aside id="caption" class="chrome">
+    <div class="who" id="who">Campaign</div>
+    <h2 id="where">—</h2>
+    <p id="why"></p>
+  </aside>
+  <aside id="rail" class="chrome">
+    <div class="stat rust"><span>Olive PCR+</span><b id="s-olive-pos">—</b></div>
+    <div class="stat gold"><span>of those, no symptoms</span><b id="s-assente">—</b></div>
+    <div class="stat"><span>Olive tests</span><b id="s-olive">—</b></div>
+    <div class="stat violet"><span>Other-host PCR+</span><b id="s-other">—</b></div>
+    <div class="stat"><span>Towns with olive+</span><b id="s-towns">—</b></div>
+    <fieldset>
+      <label><input type="checkbox" id="t-pos" checked/> <span class="dot-legend" style="background:#c45c26"></span> Olive positives</label>
+      <label><input type="checkbox" id="t-tests"/> <span class="dot-legend" style="background:#6b6560"></span> All tests (clipboard)</label>
+      <label><input type="checkbox" id="t-f7" checked/> <span class="dot-legend" style="background:#d4a24a"></span> Symptom-free olive+</label>
+      <label><input type="checkbox" id="t-other"/> <span class="dot-legend" style="background:#8b7cb8"></span> Other hosts +</label>
+      <label><input type="checkbox" id="t-ndmi"/> + −  Aug 2021 satellite 100</label>
+    </fieldset>
+  </aside>
+  <div id="scrub" class="chrome">
+    <div id="ticks"></div>
+    <input type="range" id="year" min="0" max="11" value="7" step="1"/>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data/cordon_data.js"></script>
+  <script>
+    const SAY = {
+      "2013–14": { who: "The start", where: "Lecce country", why: "First official counts. Trepuzzi, Galatina, Lecce, Gallipoli. The fire is still in the south, and they are still looking there." },
+      "2014–15": { who: "The inferno, counted", where: "Trepuzzi", why: "4,173 infected olives. 3,369 in one town. This is the Salento disaster as a number, before they stopped counting the ashes." },
+      "2016–17": { who: "The climb out of Salento", where: "Oria · Francavilla", why: "The pile of yes-tests has moved into south Brindisi. Lecce is still on the form, barely." },
+      "2017–18": { who: "Mid-Brindisi", where: "Oria · Francavilla · Carovigno", why: "The front is a line of towns, not a fog. 3,828 olive positives. 1,664 of them the inspector called symptom-free." },
+      "2018–19": { who: "Clipboard leaves Lecce", where: "Carovigno · Ostuni", why: "Zero samples east of 17.80. Not because Xylella left. Because they declared the south lost and walked north with the edge." },
+      "2019–20": { who: "Ostuni road", where: "Carovigno · Ostuni", why: "Same stretch, still testing the moving edge. The origin is off the map on purpose." },
+      "2020": { who: "Itria / north Brindisi", where: "Ostuni · Cisternino · Fasano", why: "The CKAN extract we first used begins here. Middle of the movie." },
+      "2021": { who: "Ostuni peak", where: "Ostuni 1,516", why: "2,793 olive positives. 613 with no visible symptoms — the set that decides if satellite moisture is early warning. Our 100-tree test sits in this summer." },
+      "2022": { who: "The thinning", where: "Fasano · Monopoli · Polignano", why: "235 olive positives. The crash is in the official books. The front tips onto the Bari coast." },
+      "2023": { who: "A starved year", where: "Monopoli · Fasano", why: "189 olive positives. A bad exam if this is your only hold-out." },
+      "2024": { who: "A different disease on the form", where: "Crispiano · Massafra", why: "154 olive-pauca positives. ~960 other positives are multiplex and ST1 — almonds and grapes, not the olive killer. Filter or you train on the wrong bacterium." },
+      "2025": { who: "A new island", where: "Cagnano Varano", why: "260 of 338 olive-pauca positives in one Gargano town, Foggia — far north of Bari. Not the Brindisi crawl. Do not average it in." }
+    };
+
+    const map = L.map("map", { zoomControl: false, attributionControl: true }).setView([40.7, 17.6], 8);
+    L.control.zoom({ position: "bottomright" }).addTo(map);
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+      attribution: "&copy; OSM &copy; CARTO · tests: Regione Puglia",
+      maxZoom: 16
+    }).addTo(map);
+
+    let campaigns = [], rows = [], ndmi = [];
+    let layers = L.layerGroup().addTo(map);
+
+    function rPos(n) { return Math.max(5, Math.sqrt(n) * 3.2); }
+    function rTest(n) { return Math.max(3, Math.sqrt(n) * 0.9); }
+
+    function draw(i) {
+      const c = campaigns[i];
+      if (!c) return;
+      layers.clearLayers();
+      const say = SAY[c.id] || { who: "Campaign", where: c.id, why: "" };
+      document.getElementById("who").textContent = c.id + "  ·  " + (c.date_min || "") + " → " + (c.date_max || "");
+      document.getElementById("where").textContent = say.where;
+      document.getElementById("why").textContent = say.why;
+      document.getElementById("s-olive-pos").textContent = c.n_olive_pos.toLocaleString();
+      document.getElementById("s-assente").textContent = c.n_olive_pos_assente.toLocaleString();
+      document.getElementById("s-olive").textContent = c.n_olive.toLocaleString();
+      document.getElementById("s-other").textContent = c.n_other_pos.toLocaleString();
+      document.getElementById("s-towns").textContent = c.n_comuni_with_olive_pos + " / " + c.n_comuni;
+      document.querySelectorAll("#ticks span").forEach((el, j) => el.classList.toggle("on", j === i));
+      document.getElementById("year").value = i;
+
+      const showPos = document.getElementById("t-pos").checked;
+      const showTests = document.getElementById("t-tests").checked;
+      const showF7 = document.getElementById("t-f7").checked;
+      const showOther = document.getElementById("t-other").checked;
+      const showNdmi = document.getElementById("t-ndmi").checked;
+      const slice = rows.filter(r => r.campaign === c.id);
+
+      if (showTests) {
+        slice.filter(r => r.n > 0).forEach(r => {
+          L.circleMarker([r.lat, r.lon], {
+            radius: rTest(r.n), color: "#6b6560", weight: 1, fillColor: "#3a342c", fillOpacity: 0.45
+          }).bindTooltip(r.comune + " · " + r.n + " tests").addTo(layers);
+        });
+      }
+      if (showPos) {
+        slice.filter(r => r.n_olive_pos > 0).forEach(r => {
+          L.circleMarker([r.lat, r.lon], {
+            radius: rPos(r.n_olive_pos), color: "#c45c26", weight: 1.2, fillColor: "#c45c26", fillOpacity: 0.55
+          }).bindTooltip(r.comune + " · " + r.n_olive_pos + " olive PCR+").addTo(layers);
+        });
+      }
+      if (showF7) {
+        slice.filter(r => r.n_olive_pos_assente > 0).forEach(r => {
+          L.circleMarker([r.lat, r.lon], {
+            radius: Math.max(4, Math.sqrt(r.n_olive_pos_assente) * 3),
+            color: "#d4a24a", weight: 2, fill: false
+          }).bindTooltip(r.comune + " · " + r.n_olive_pos_assente + " olive+ with no symptoms").addTo(layers);
+        });
+      }
+      if (showOther) {
+        slice.filter(r => r.n_other_pos > 0).forEach(r => {
+          L.circleMarker([r.lat, r.lon], {
+            radius: Math.max(4, Math.sqrt(r.n_other_pos) * 2.4),
+            color: "#8b7cb8", weight: 1, fillColor: "#8b7cb8", fillOpacity: 0.45
+          }).bindTooltip(r.comune + " · " + r.n_other_pos + " other-host PCR+").addTo(layers);
+        });
+      }
+      if (showNdmi) {
+        ndmi.forEach(p => {
+          const col = p.pos ? "#c45c26" : "#7a9a6a";
+          L.circleMarker([p.lat, p.lon], {
+            radius: 3, color: col, weight: 2, fillColor: col, fillOpacity: 1
+          }).bindTooltip(
+            (p.pos ? "PCR+" : "PCR−") + " · NDMI " + (p.ndmi != null ? p.ndmi.toFixed(2) : "—") + " · " + p.comune
+          ).addTo(layers);
+        });
+      }
+    }
+
+    function boot() {
+      const data = window.CORDON;
+      if (!data || !data.campaigns) {
+        document.getElementById("why").textContent =
+          "Data script missing. Keep index.html next to data/cordon_data.js.";
+        return;
+      }
+      campaigns = data.campaigns;
+      rows = data.rows;
+      ndmi = data.ndmi || [];
+      const ticks = document.getElementById("ticks");
+      campaigns.forEach((x, i) => {
+        const s = document.createElement("span");
+        s.textContent = x.id;
+        s.onclick = () => draw(i);
+        ticks.appendChild(s);
+      });
+      document.getElementById("year").max = String(campaigns.length - 1);
+      ["t-pos","t-tests","t-f7","t-other","t-ndmi"].forEach(id => {
+        document.getElementById(id).onchange = () => draw(+document.getElementById("year").value);
+      });
+      document.getElementById("year").oninput = e => draw(+e.target.value);
+      const start = campaigns.findIndex(x => x.id === "2021");
+      draw(start >= 0 ? start : 0);
+    }
+    boot();
+  </script>
+</body>
+</html>

@@ -1,5 +1,8 @@
 # regenerable bulk
 raw/data/*.csv
+raw/data/*.xlsx
+raw/data/camp_xlsx/
+raw/data/crecco_oqds_insight/
 raw/data/*.zip
 raw/data/*.gpkg
 raw/data/*.tif

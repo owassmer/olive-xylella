@@ -1,0 +1,21 @@
+{
+  "unit": "official monitoring campaign (one workbook = one frame)",
+  "n_comune_campaign": 820,
+  "campaigns": [
+    "2013\u201314",
+    "2014\u201315",
+    "2016\u201317",
+    "2017\u201318",
+    "2018\u201319",
+    "2019\u201320",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "missing": [
+    "2015\u201316 dedicated workbook"
+  ]
+}
