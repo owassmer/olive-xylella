@@ -158,7 +158,7 @@ Two artifacts, one partner brief.
 **Artifact A — Pre-diagnostic test (then a nowcast only if it lives)**
 Tree-level official diagnostic labels (campaign workbooks 2013–2025). Crown geometry from Puglia 0.15–0.20 m orthophotos and Crecco WV2-derived rasters. Sentinel-2 time series as the repeatable VNIR/red-edge/SWIR measurement, unmixed with VHR fractions. Sentinel-1 and Landsat LST (100 m native) as structure and drought controls.
 
-Success is not a 10 m map. Success is: out-of-area discrimination of diagnostic-positive trees remains above matched negatives at a stated lag (0 / 30 / 60 / 90 days). If it does not, Artifact A stops at that negative result.
+Artifact A is a ledger of measurement hypotheses, not one test. Branches close; the artifact closes only when every accessible, biologically plausible measurement branch is tested or proven inaccessible. See `nowcast/ARTIFACT_A.md`. Branch A0 (raw absolute Sentinel-2 NDMI at 10/20 m) is a closed negative on 1,679 matched pairs. That null bounds the cheapest sensor; it does not answer whether the precursor is absent or diluted by the 400 m² SWIR pixel. Open branches: temporal anomaly (A1), crown-fraction dilution (A2), released crown-scale WV2/CIR optical (A3), WV-3 SWIR (A4), airborne physiology (A5).
 
 **Artifact B — Resistance Decoder v0**
 Unchanged object: ranked olive pathways and ST53-exposed targets from papers we hold. S105/S215 beat parental Leccino on canopy. Computational only. Do not synthesize.
