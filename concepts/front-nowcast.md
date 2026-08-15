@@ -13,7 +13,7 @@ contested: false
 
 Drought-controlled suspicion map of the Bari / northern buffer.
 
-Inputs: [[camp-csv]] labels + Sentinel-2 L2A (Planetary Computer / Copernicus). Method: gradient-boosted trees on spectral and water-stress features first. Oracle: held-out official campaign year — or a spatial fold if 2023 never appears.
+Inputs: [[camp-csv]] labels + Sentinel-2 L2A (Planetary Computer / Copernicus). Method: gradient-boosted trees on spectral and water-stress features first. Oracle: 2022–23 official year (real in time, 358 olive positives — starved) **and** a spatial fold inside 2020–21. Do not rely on the later years alone.
 
 Mandatory ablations: NDVI-only, drought/water-only, full. Metric: precision-recall. The positive class is ~1%.
 

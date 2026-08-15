@@ -37,6 +37,16 @@
 - emergenzaxylella.it: connection reset — ACCESS_BLOCKED
 - Copernicus CDSE catalogue probe not completed (URL quoting); catalog exists and is free with account
 
+## [2026-08-15] update | Full CAMP file verified
+
+- raw/data/CAMP_2020_2022.csv now 81,999,815 bytes, sha256 124ebb627433a14735f158adfe2b9adb6abdfc124645e61f064ab3ebd0ff39f9
+- 688,631 complete rows, 20 Jan 2020 – 30 Jun 2023
+- 605,617 joinable olives, 5,195 positives
+- Positives by year: 2020 1976 / 2021 2861 / 2022 235 / 2023 123 — hold-out is starved
+- Lecce still absent; Brindisi holds 4,018 of 5,195 olive positives
+- Inventories refreshed; Day-1 gate still PASS
+
+
 ## [2026-08-15] create | Seed entity/concept pages
 
 - entities: xylella-fastidiosa, philaenus-spumarius, leccino, cnr-ipsp

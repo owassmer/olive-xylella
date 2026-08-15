@@ -19,13 +19,13 @@ Official sample-level diagnostic table. Encoding cp1252, delimiter `;`.
 
 CRS: WGS84 geographic, Italian comma decimals. Empty cultivar ~10.5%. Symptom labels mixed case (`Assente`/`ASSENTE`).
 
-## Partial-file facts (do not quote as full campaign)
+## Full-file facts (verified 2026-08-15)
 
-335,947 complete rows · 304,541 joinable olives · 2,938 olive positives (0.965%) · every complete row has coords · 20 Jan 2020 – 28 Sep 2021 · no Lecce · lat 40.39–41.44 · lon 15.70–17.78.
+688,631 complete rows · 605,617 joinable olives · 5,195 olive positives (0.858%) · every complete row has coords · 20 Jan 2020 – 30 Jun 2023 · no Lecce · lat 40.39–41.93 · lon 15.15–17.78.
 
-Full file advertised at 82 MB; we held 40 MB when these numbers were computed. Re-download in flight.
+Olive positives by year: 2020 1,976 · 2021 2,861 · 2022 235 · 2023 123. Hold-out years are real and starved.
 
-CAMP_2020_2023.csv exists in CKAN with an empty URL.
+CAMP_2020_2023.csv exists in CKAN with an empty URL. 2023 is already inside this file.
 
 ## Related
 

@@ -4,16 +4,20 @@ Contract gate (CORDON §5): *we can point to a row in the CSV, a lat/lon or comu
 
 ## Verdict: PASS — tree-level, and it is the front
 
-The Puglia open CSV is **not** comune-level. Every complete row has `LATITUDINE` and `LONGITUDINE`. On the partial file we hold:
+Full file is on disk (81,999,815 bytes, sha256 `124ebb62…`, trailing newline, 688,631 complete rows). Dates: 20 Jan 2020 – 30 Jun 2023. The 2023 campaign is inside this file; the separate CKAN resource `CAMP_2020_2023.csv` is still URL-empty and unused.
 
-- 335,947 complete sample rows
-- 304,541 olive rows with lat/lon + `RISULTATO` (PCR)
-- 2,938 olive positives (0.965%)
-- 100% of complete rows have coordinates
-- Dates in this partial: 20 Jan 2020 – 28 Sep 2021 (years 2020 and 2021 only)
-- Provinces: Brindisi, Taranto, Bari, BAT, a handful of Foggia. **Lecce is absent.**
+- 688,631 complete sample rows
+- 605,617 olive rows with lat/lon + `RISULTATO` (PCR)
+- 5,195 olive positives (0.858%)
+- Coordinates on every complete row
+- Provinces: Bari (337k), Brindisi (182k), Taranto (147k), BAT (15k), Foggia (7.9k). **Lecce is absent.**
 
-That last fact is load-bearing. This is the official monitoring of the **buffer / northern front**, not a census of dead Salento. That is exactly the label set Artifact A needs.
+Olive positives by year: 2020 = 1,976 · 2021 = 2,861 · 2022 = 235 · 2023 (to 30 Jun) = 123.
+That collapse is load-bearing. A 2022–23 hold-out is legitimate in time and starved of positives. Precision-recall still, and we will also report a spatial fold inside 2020–21.
+
+Olive positives by province: Brindisi 4,018 · Taranto 746 · Bari 431. The labelled front is Brindisi-heavy.
+
+That last pair of facts is the strategic one. This is official monitoring of the **buffer / northern front**, not a census of dead Salento. It is exactly the label set Artifact A needs.
 
 Example joinable row (first data line):
 
@@ -29,13 +33,11 @@ Sentinel-2: Planetary Computer STAC returned live L2A items over this bbox (tile
 
 | Item | State | Meaning |
 |---|---|---|
-| Full CAMP_2020_2022.csv (82 MB) | in flight | partial stats must not be quoted as complete |
-| CAMP_2020_2023.csv | ACCESS_BLOCKED — CKAN url empty | 2023 hold-out year may be missing |
+| CAMP_2020_2022.csv | CLOSED — full file verified | 688,631 rows, through 30 Jun 2023 |
+| CAMP_2020_2023.csv (separate CKAN resource) | ACCESS_BLOCKED — url empty | redundant; 2023 already in the 2020–2022 file |
 | emergenzaxylella.it maps | ACCESS_BLOCKED — connection reset | no official polygon layer yet |
 | Zarco-Tejada 2018 PDF, EFSA 2016 PDF | Cloudflare | use extracted/OA copies |
 
-If 2023 never appears, the nowcast hold-out becomes a spatial fold inside 2020–2022, not a later year. Recorded now so we do not pretend otherwise later.
-
 ## So what
 
-We do **not** downgrade to comune nowcast. We proceed tree-level. Class is rare (~1% positive) — evaluation is precision-recall, never accuracy. Next build step is not more papers; it is finishing the CSV and writing the feature-join script against one Sentinel scene.
+We do **not** downgrade to comune nowcast. We proceed tree-level. Class is rare (0.86% olive-positive) and **collapses after 2021**. Evaluation is precision-recall, never accuracy, and the 2022–23 hold-out must be paired with a 2020–21 spatial fold. Next build step is the feature-join script against one Sentinel scene.
