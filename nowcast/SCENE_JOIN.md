@@ -36,6 +36,12 @@ NDVI does **not** clear the bar. A nowcast that is just greenness will lose to a
 - 10 m is not airborne hyperspectral. Zarco-Tejada’s >80% was a different instrument.
 - 2022–23 labels are still starved. This test used 2021 on purpose.
 
-## So what
+## Addendum — NDVI as drought proxy (same 100 points)
 
-The join path is real: CAMP lat/lon → public COG → index. The first spectral feature that earns its keep is **NDMI, not NDVI**. Next build step is the drought ablation on NDMI (and NDRE as a secondary), not another literature pass.
+OLS residual NDMI ~ NDVI (pooled): Cliff’s δ **−0.379**, p **0.0005**.
+NDVI-nearest match (median |ΔNDVI|=0.012): NDMI δ **−0.31**, p **0.006**.
+
+Greenness control **strengthens** NDMI. First-order “they’re just browner” fails. Still not meteorological drought. All 100 points are Brindisi; positives are mostly Ogliarola salentina / Altro, not Leccino.
+
+Same 100 points on **22 Aug 2021** (10 days later, 0.26% cloud): NDMI δ **−0.330**, p **0.004**; NDVI δ −0.15, p **0.20**. Not a one-date fluke.
+

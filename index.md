@@ -26,6 +26,8 @@
 ## Datasets / methods
 
 - [[camp-csv]] — CAMP_2020_2022 tree-level PCR
+- queries/assumption-reopen-live.md — locks we are willing to kill
+- data/decoder/v0-genes.md — first decoder table
 - nowcast/SCENE_JOIN.md — one-scene NDMI/NDVI test
 
 ## Queries
