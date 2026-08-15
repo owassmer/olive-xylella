@@ -11,6 +11,7 @@ Artifact A is the measurement question: can infection physiology be observed bef
 | A4 — fine SWIR | Does ~3.7 m WorldView-3 SWIR reveal what 20 m S2 cannot? | Unrun; ESA TPM proposal route |
 | A5 — airborne physiology | Does the matched diagnostic cohort show Zarco-class HS+thermal traits at crown scale? | Unrun; partner route |
 | A6 — operational transfer | Does any surviving signal travel north with the front? | Later; requires a surviving signal |
+| A7 — free super-resolution S2 | Does the matched Δ signal appear at ~2.5 m (SEN2SR / OpenSR) once crown fractions rise above the 0.35 median that native S2 samples? | Open. Rationale: A2 measured the purity gap (median 20 m cf 0.349; only 6.3% of positives ≥0.6), so cf→1 is untestable at native grain. SR changes the sampling grain on the identical scenes, cohort, matching, and oracle at $0. Caveat: SR synthesizes spatial detail from the same measurement — SWIR information content does not increase. A **null** is informative (weakens the dilution reading; strengthens A4/A5 and exhausts free options). A **positive** requires skeptical replication before any claim: it may be model prior, not physiology |
 
 ## Interpretation rule
 
