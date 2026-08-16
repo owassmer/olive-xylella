@@ -17,14 +17,16 @@ Market structure, existing suppliers, and willingness-to-pay are under adversari
 
 Both phases are product surface: pre-front producers need exposure tracking; post-front producers need decision support and restored monitoring.
 
-## Product hypotheses
+## Product line (post-review, S7/S8/S9 verdicts applied)
 
-| # | Product | Buyer phase | Data basis | Status |
+| # | Product | Buyer / channel | Price shape | Status |
 |---|---|---|---|---|
-| P1 | Parcel Exposure & Action Report — front distance/velocity, ring positivity and testing-intensity history, conversion pressure, zone obligations, subsidy options | pre-front and post-front | official workbooks (on disk), EU/regional rules | demo built (`amalberga-profile.md`) |
-| P2 | Block decline monitor — multi-date Sentinel-2 incidence at block scale (Hornero-validated formulation), alerts for sampling/agronomy; restores a monitoring feed where official testing stopped | post-front | S2 pipelines on disk + crown masks | pipeline exists; product framing pending S8 |
-| P3 | Producer Xylella Playbook 2026 — obligations by zone, subsidy navigation, cultivar decisions, realistic treatment expectations, cited | all | S1/S2/S4/S9 verified facts | pending S9 |
-| P4 | Vineyard PD watch note — ST1 status and what a wine estate should monitor | wine estates | S4 review + 2024–25 subspecies records | pending synthesis |
+| P1 | **Playbook 2026 + per-farm exposure brief** (merged lead product): zone-conditional legal matrix, obligations calendar, felling triggers by regime, money/deadline tracker, cultivar table (gated), ST1 wine annex; personalized ring/testing/conversion panels | Consorzio DOP Collina di Brindisi, Oleificio Coop Ostuni (386 members), AMO Puglia, polo antixylella, GAL Alto Salento | €1–10k one-off per body; annual refresh | building; spec = S9-D, caveats = S8 |
+| P2 | Block canopy-condition trend (cause-agnostic, Hornero formulation) | annex inside P1 only, never standalone; S9 kills producer-facing RS as a product | n/a | gated on Crecco-box validation; earliest v1.1 |
+| P3 | Cultivar field-evidence sheet at point of sale | polo antixylella, nurseries, Aproli Bari, APROL Lecce | sponsor-funded | gated on the Leccino positive-control analysis |
+| P4 | Monumental grafting triage | AMO Puglia, Save the Olives; CSR sponsor pays | €/project | blocked on LR 14/2007 registry acquisition |
+
+Killed as products: farmer-paid SaaS, sensors, dashboards, labels, insurance, ST1 alarm service, zone-lookup app (S7-E, S9-E). Ring positivity + testing intensity is the strongest sellable claim (S8-A2); arrival times only as labeled scenario bands.
 
 ## Red lines
 
