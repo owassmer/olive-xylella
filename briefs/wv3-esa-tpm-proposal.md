@@ -1,6 +1,6 @@
 # ESA Third Party Missions — WorldView-3 SWIR request (draft, unsent)
 
-Status: draft. Send only after Artifact A branch A2 (crown-dilution test) reports, so the rationale cites a measured dilution result, not a hope.
+Status: draft. Unsent. Free S2 (A0, A1, A2, A7) is a closed negative. The ask is crown-scale SWIR, not another 10–20 m index.
 
 ## One-line ask
 
