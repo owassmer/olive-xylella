@@ -27,7 +27,15 @@ The report's three converging failures (translation, trust, dynamic uncertainty)
 
 **2.5 The kill lists still bind.** Farmer-paid SaaS, per-tree satellite scores, arrival dates, "Xylella-free" certification, dose prescriptions, injunction legal advice remain killed (S7-E, S8-E, S9-E). The OS reframe does not resurrect them; it routes around them (multi-sided monetization, bodies and institutions pay).
 
-**2.6 Unverified names stay unverified until the check returns.** FIXYLL, Omibreed, REACH-XY, Coltiva Italia, €10M/yr monitoring cost are report assertions. Outreach lists and partner language wait for `telos-pivot-verification.md`.
+**2.6 Verification verdicts (from `telos-pivot-verification.md`, 16 Aug 2026).** All three project names are real; none is what the report sells.
+
+- **FIXYLL**: real ASI project (contract 2023-36-I.0, Planetek + DTA + UNAPROL) — but it **ended 18 Jun 2025**, has no commercial product, and is not a documented REDoX successor. Its service list ("verifica delle prescrizioni regionali", explant validation) is the first primary evidence that satellite compliance-verification **for authorities** is being prototyped. Wedge-3 consequence: the conversation is with Planetek/DTA about a post-project gap, and the compliance buyer there is the Osservatorio/ARIF, not producers.
+- **OMIBREED**: MASAF-funded (DM 664766/2022) CNR-IPSP marker groundwork; no registered-variety output promised; olive MAS "ancora difficilmente applicabile". **REACH-XY**: verified, €15M MUR umbrella (2023–2027, CNR-led, 16 partners incl. genomics-assisted selection and therapeutics WPs) — a **duplication risk** that reinforces keeping decoder-style work as credibility material, not a program line.
+- **Coltiva Italia**: a near-final **bill**, not a call — €1.14B total, ~€300M Piano olivicolo 2026–2030, national Xylella commissario to 2028; Camera approved 6 Aug 2026, Senato final vote pending; money spendable early **2027**. Playbook watch item; promise nothing before 2027.
+- **"€10M/yr monitoring"**: misleading. DGR 1593/2024 budgets €10.62M for 2024 only, then **€2.77M (2025) and €1.95M (2026)** — a documented ~80% monitoring-budget cut that independently corroborates the Murge sampling collapse and belongs in that brief as a citable anchor.
+- **€30M AGEA**: real (MASAF/MEF decree Feb 2025: 100% aid, €15k/ha cap, containment strip excluded; funds at AGEA since ~Jan 2026) and **still not open as of 16 Aug 2026** — ~18 months of "imminent". Exactly the deadline-watch content Wedge 1 monetizes.
+- **Salento recovery**: published, citable (Agronomy 14(9):2003; Plants 13(16):2186; Plants 13(7):930) — resilient groves rebuild crowns and yield 5–15 kg/tree while remaining Xf-positive at 10^4–10^7 CFU/mL. Wedge 2 gains a peer-reviewed foundation; the mandatory caveat is that resilient trees remain inoculum reservoirs. The report's Boscia attribution and "officially under-used" framing are unsupported.
+- **New verified anchors**: >€600M public funds spent / >4M trees felled in 13 years (Il Sole 24 Ore 2026); FS-17 adult-plant scarcity (Catalano/Olivo e Olio); ARIF Restinco free channel rationed at 100 plants/request.
 
 ## 3. What survives of the current product line
 

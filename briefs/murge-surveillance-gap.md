@@ -70,3 +70,5 @@ mx_comuni = pos[pos.SUBSPECIE.str.upper().str.contains("MULTIPLEX", na=False)].C
 - The 2024 Murge surge was itself the delimitation response; 2025 effort remains above the near-zero 2022–23 baseline. Both readings (planned triage vs gap) are consistent with the data — that is precisely the question posed.
 - `SUBSPECIE` exists only in the 2024 and 2025 workbooks; earlier campaigns cannot be split by subspecies. Labels are official diagnostic results as recorded.
 - This document is a data observation plus a request for clarification. It asserts nothing about intent.
+
+**Contesto di bilancio / Budget context (added 16 Aug 2026).** The regional action plan itself budgets a steep monitoring decline: DGR 1593 del 25/11/2024 allocates €10,623,826.66 for 2024, €2,770,000 for 2025, and €1,950,000 for 2026 (~−80% after 2024). The Murge drawdown is therefore consistent with a system-wide budget constraint, which sharpens rather than answers the question: under a reduced budget, is the Murge multiplex area the intended place to absorb the cut? (Verification: `queries/telos-pivot-verification.md`, claim 5.)
