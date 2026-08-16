@@ -18,7 +18,7 @@ After the work, write three blocks:
 
 ## Objective
 
-Reduce the projected economic loss from *Xylella fastidiosa* by any legal computational means. Loss-lever partition and adversarial reviews: `queries/telos-review-*.md`. The program contract in `CORDON.md` is under revision pending the telos synthesis.
+Reduce the projected economic loss from *Xylella fastidiosa* by any legal computational means. Loss-lever partition and adversarial reviews: `queries/telos-review-*.md`. Primary route: information products that producers — olive estates, mills, cooperatives, wine estates (exemplar: Cantine Amalberga, Ostuni) — and authorities will actually use. Producer strategy: `producers/STRATEGY.md`. The program contract in `CORDON.md` is under revision pending the telos synthesis.
 
 ## Constraints
 

@@ -15,3 +15,4 @@ nowcast/cache/
 __pycache__/
 *.pyc
 .env
+producers/cache/
