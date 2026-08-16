@@ -10,15 +10,27 @@ Reduce the projected economic loss from *Xylella fastidiosa* by legal computatio
 
 ## Route
 
-Information products that producers and authorities will actually use. The customer is the intermediary body — DOP consortia, cooperatives/OPs, AMO Puglia, polo antixylella, GALs — at €1–10k one-off briefs, never farmer-paid SaaS. Exemplar client context: Cantine Amalberga (Ostuni), a wine+oil+tourism estate in the comune that logged 1,516 olive positives in 2021 and has had zero official samples within 10 km since 2022. Full ranking and evidence: `queries/telos-synthesis.md`. Producer line: `producers/STRATEGY.md`.
+North star: a **Resilience Operating System** for the Apulian olive economy — a recurring coordination layer that closes the loop between official data, funding rules, certified plant supply, field performance, and collective action. Assessment and sequencing: `queries/telos-pivot-resilience-os.md`. The pain points it serves are verified in the review corpus: translation/last-mile failure, trust failure after the fund scandal, and dynamic multi-stress uncertainty.
 
-## Work order (ranked by Δ€ × use-probability)
+Execution is by wedge, not by platform build:
 
-1. **Producer Playbook 2026 + per-farm exposure brief.** Zone-conditional legal matrix (2020/1201 as amended through 2025/2231; DDS 82/2026 map; 2-km containment strip), 2026 obligations calendar (DDS 39 + proroga DDS 79), felling triggers by regime (50-m same-species only in eradication foci), money/deadline tracker (Art.6 queue, DDS 53 + 120/2026, €30M AGEA watch), cultivar table with evidence grades, ST1 wine annex. Personalized per farm from the 12 workbooks: ring positivity + testing intensity, conversion pressure, sampling-effort trend. Spec: S9-D; caveats: S8.
-2. **Cultivar × conversion field analysis.** Repeat-tested coordinates across all 12 campaigns, location/campaign controls. Hard gate: Leccino must emerge field-resistant (positive control) before any client sees a cultivar table.
-3. **Design-adjusted front rate c(t) 2013–2025** with slowdown attribution (front vs survey artifact vs saturation). The only empirical rate stops in April 2018 (Kottelenberg 2021, 10.0 km/yr). Consumers: EFSA/Regione; also upgrades exposure-brief front context to honest scenario bands.
-4. **Murge surveillance-gap brief** for the Osservatorio Fitosanitario: multiplex sampling fell 34,443 → 1,966 (−94%) in 2025 while the ST26 cloud spans ~61×36 km.
-5. **Monumental grafting triage** (blocked on acquiring the LR 14/2007 registry).
+1. **Eligibility & collective-application engine** — parcel in → zone status, applicable measures, deadline calendar, pre-filled dossier skeleton out, every field citing its decree. Licensed to coops/OPs/CAAs (we tool the dossier work; we do not practice consultancy). Attacks the verified binding constraint: €222M demand vs €80M funds, silent portal deadlines, position 3,758 of 9,186 six years in.
+2. **Participatory phenotyping & recovery network** — protocol + schema pooling coop plantings and Salento recovery observations with the 16,771-coordinate conversion cohort. The outreach vehicle to CNR-IPSP/BeXyl; arrives with data (Frantoio RR 0.348, p 0.005; decoder v1), not a pitch.
+3. **Partnership layer** — Planetek/FIXYLL own "see"; we own "decide under legal and financial constraints". Contact after fact verification and a Wedge-1 demo.
+
+Existing artifacts are modules, not discarded products: playbook = regulatory-state module; exposure engine = parcel-history module; conversion engine = phenotyping seed; front-rate + Murge = surveillance intelligence. Business model: recurring per-body subscription + per-dossier fees + later licensing. One-off briefs are demos, not the business.
+
+Deferred, with recorded reasons: parametric insurance triggers (our own identifiability and sampling-collapse findings make triggers gameable), marketplace transaction fees (supply-capped, politically toxic post-scandal), heritage-tree triage (blocked on LR 14/2007 registry). Exemplar member context: Cantine Amalberga (Ostuni) — 1,516 olive positives in the comune in 2021, zero official samples within 10 km since 2022.
+
+## Work order (post-pivot, 16 Aug 2026)
+
+1. **Wedge 1 prototype: eligibility & collective-application engine.** Input: parcel coordinates (+ optional CUAA/particella data supplied by the coop). Output: zone status (DDS 82/2026 map), applicable measures (Art. 6 / SRD01.01B / €30M AGEA watch), eligibility conditions with article citations, deadline calendar, dossier skeleton. Pilot on the next open call with one coop.
+2. **Wedge 2 design: participatory phenotyping protocol + schema**, pooled with the conversion cohort; outreach package for CNR-IPSP/BeXyl (decoder v1 + Frantoio finding + protocol).
+3. **Cultivar analysis upgrade** (SINTOMO severity outcome, distance-to-positive control, orthophoto survival when the mortality layer exists) — feeds Wedge 2 and unlocks the cultivar table.
+4. **Orthophoto mortality layer** (2019→2022/23 canopy loss, Ostuni–Fasano belt) — the 2022–25 damage record nobody else has; feeds exposure briefs and Wedge 2.
+5. **Held assets, awaiting Owen decisions:** Murge brief (unsent), license-confirmation note (unsent), accesso civico requests (LR 14/2007 registry; 2026 adult-treatment determina), pilot channel choice.
+
+Completed and standing: Playbook v0.1 (regulatory module), exposure engine + Amalberga demo, front-rate analysis (2022–25 unidentifiable → scenario bands), Murge analysis, conversion engine (Frantoio RR 0.348 p 0.005; Leccino gate internal), decoder v1.
 
 ## Data and rights
 
