@@ -11,6 +11,14 @@ Inputs: S0 (self), S1 (spread), S2 (severity/replant), S4 (tail risk), S7 (produ
 5. **The €1.3–3.6B replant lever is gated by money/administration, not knowledge** (€222M demand vs €80M; €17M cash out; €18.8M phantom plantings; ~3,758 of ~9,186 applications processed by DDS 53/2026). Better gene tables change none of it. (S2, S9-B)
 6. **No empirical front rate exists after April 2018** (Kottelenberg 2021: 10.0 km/yr, 2013–2018). Arrival-time point estimates are unsellable; only labeled scenario bands are honest. (S1, S8-A6)
 
+## Status (16 Aug 2026)
+
+1. Playbook 2026: DRAFT v0.1 on disk (`producers/playbook-2026.md`), 4 load-bearing facts re-verified, 2 of 3 named GAPs resolved (Valenzano DDS 2/2026, Bitonto DDS 3/2026; CSR = SRD01.01B). Remaining GAP before v1.0: the 2026 adult-treatment determina.
+2. Cultivar field analysis: RUN. Leccino gate NOT passed (MH RR 0.785, p 0.058) — table stays internal (`nowcast/CULTIVAR_FIELD.md`). Frantoio RR 0.348, p 0.005 recorded. Upgrade path: symptom outcome, distance-to-positive control.
+3. Front rate: BUILT (`nowcast/FRONT_RATE.md`). 2013–18 ≈ 5.7 km/yr (design range 3.5–7.9; estimator discards the leading tail Kottelenberg weights — within-method comparisons valid). 2018–21 contiguous front ≈ 2–5 km/yr with ~25 km jump foci. **2022–2025 UNIDENTIFIABLE: the survey frame left the infected zone.** Exposure briefs must use scenario bands + this identifiability statement.
+4. Murge brief: DRAFT on disk (`briefs/murge-surveillance-gap.md`), bilingual, NOT SENT. Reproduces −94.3% exactly; adds: drawdown is Murge-specific (Bari sampling rose), Altamura 2025 positivity still ~1.5% at reduced effort.
+5. Grafting triage: still blocked on LR 14/2007 registry.
+
 ## Ranked work order
 
 | # | Action | Consumer / channel | Δ€ logic | Status / gate |
