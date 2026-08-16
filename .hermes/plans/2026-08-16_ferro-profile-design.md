@@ -147,7 +147,14 @@ Postflight: update `BUILD_STATE.md`; append any new RIDs to `RID_LEDGER.md`; com
 Proposal merges. Repo source approvals. Anything Control Panel. The recruiter facts (submission window, mid-process eligibility). Demo-video takes.
 
 ## Data staging
-`data/` holds copies from `~/Desktop/Connor/olive-xylella`: CAMP workbooks, CKAN CSV, zone geometry (per the data-universe research), decree register. Licenses and attribution strings travel with the files (CC-BY-4.0 / CAD 52(2) / Copernicus credit).
+`data/` holds copies from `~/Desktop/Connor/olive-xylella`: CAMP workbooks, CKAN CSV, decree register. Licenses and attribution strings travel with the files (CC-BY-4.0 / CAD 52(2) / Copernicus credit).
+
+Data-universe verdicts (probed 16 Aug 2026; full evidence in `olive-xylella/data/DATA_UNIVERSE_{GEO,CIVIC,FLIPS}.md`):
+- **Official demarcation-zone polygons are queryable, not gated**: `webapps.sit.puglia.it/arcgis/rest/services/Operationals/DatiPubbliciFasceXF/MapServer` — 16 layers (ST53 ex-Salento Infetta/Cuscinetto/Contenimento = layers 12–15, plus per-focolaio zones incl. Minervino Murge) + 7 decree-versioned historical Zona Infetta layers. Slice 2 ingests the official layer; the report's "digitize from the map" fallback is retired.
+- **Parcel geometry is public twice**: SIT `Background/Catasto` L2 Particelle (4,935,899 polygons, COMUNE/FOGLIO/NUMERO, point-in-parcel query works) and AdE INSPIRE WFS (NATIONALCADASTRALREFERENCE). Parcel-level ontology is real, not notional; CUAA linkage stays closed (AGEA accesso-civico target).
+- **Monumental registry**: `Operationals/UliviMonumentali` L1 = 341,428 points with foglio/particella.
+- **Felling decrees**: permanent BURP PDFs at stable `DET_{n}_{d}_{m}_{yyyy}.pdf` URLs with parcel annexes — a real FellingOrder data source.
+- **Correction owed**: DGR 1075 del 29/07/2025 = Piano d'azione **2025-2027** supersedes the 2024-2026 plan cited by the playbook and Murge brief. 2026 adult-treatment determina genuinely not found (2025 analog issued 16 Jun); accesso-civico wording staged.
 ```
 
 ## 9. Boot sequence (Ferro's first session after instantiation)
