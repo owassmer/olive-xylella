@@ -26,6 +26,8 @@ Reduce the projected economic loss from *Xylella fastidiosa* by any legal comput
 - Labels are official diagnostic results until the assay is read per campaign.
 - Free-tier-safe. No new paid cloud.
 - Self-imposed strategy rules (partner timing, non-competition, sensor choices, tree-level framing) are revisable decisions, not laws.
+- **Deliverable value is positive.** A negative or gated result is an internal quality checkpoint, never the product. Convert every limit into the acquisition, method, or dataset that produces the positive finding.
+- **On-disk data is never the universe.** Before declaring a data limit: exhaust external sources and create data — remote-sensing layers we compute, accesso civico requests, scraped public acts (albo pretorio, BURP), producer-generated records, client-commissioned capture. Positives must still be true; the red lines in `CORDON.md` govern claims, not ambition.
 
 ## Evidence spine
 
