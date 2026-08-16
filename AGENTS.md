@@ -14,23 +14,18 @@ After the work, write three blocks:
 
 1. **Findings.** What we now know. For each finding: the intuitive meaning, the direct effect, and proven or potential second-order effects.
 2. **Next 5 steps.** Concrete, ordered.
-3. **Telos.** Where this sits in the program: test whether official diagnostic positivity has a remotely detectable precursor after drought and cultivar matching, and hand CNR a cited resistance-target table, without touching a live bacterium.
+3. **Telos.** Position against the objective: reduce the projected economic loss of the Xylella epidemic. Anchor (Schneider et al. 2020 PNAS; verify before citing): Italy €1.9–5.2B over 50 years without resistant replant, €0.6–1.6B with; slowing spread from ~5.2 to ~1.1 km/yr ≈ €0.5–1.3B. Experiments, artifacts, and briefs are instruments toward that number, not goals.
 
-## End state
+## Objective
 
-1. Experiment 1: a stated lag (0 / 30 / 60 / 90 days) or a written negative after matching.
-2. Resistance Decoder v0: a cited table a CNR postdoc can take to lab meeting.
-3. Partner brief only after (1) has a number and (2) has a table.
+Reduce the projected economic loss from *Xylella fastidiosa* by any legal computational means. Loss-lever partition and adversarial reviews: `queries/telos-review-*.md`. The program contract in `CORDON.md` is under revision pending the telos synthesis.
 
 ## Constraints
 
-- Computational only. No cultures, no plant or insect movement.
-- AMP/phage candidates are paper-only. Do not synthesize.
-- Do not email Bari until Artifact A has a lag number and Artifact B has a table.
-- Do not compete with Planetek REDoX, Zarco-Tejada, BIOVEXO.
+- Computational only. No cultures, no plant or insect movement. No synthesis of AMP/phage (quarantine pest; legal).
 - Labels are official diagnostic results until the assay is read per campaign.
-- Experimental unit is the tree (VHR crown + point), not the 10 m pixel.
 - Free-tier-safe. No new paid cloud.
+- Self-imposed strategy rules (partner timing, non-competition, sensor choices, tree-level framing) are revisable decisions, not laws.
 
 ## Evidence spine
 
