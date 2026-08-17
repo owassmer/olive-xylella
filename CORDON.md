@@ -20,7 +20,7 @@ Execution is by wedge, not by platform build:
 
 Existing artifacts are modules, not discarded products: playbook = regulatory-state module; exposure engine = parcel-history module; conversion engine = phenotyping seed; front-rate + Murge = surveillance intelligence. Business model: recurring per-body subscription + per-dossier fees + later licensing. One-off briefs are demos, not the business.
 
-Deferred, with recorded reasons: parametric insurance triggers (our own identifiability and sampling-collapse findings make triggers gameable), marketplace transaction fees (supply-capped, politically toxic post-scandal), heritage-tree triage (blocked on LR 14/2007 registry). Exemplar member context: Cantine Amalberga (Ostuni) — 1,516 olive positives in the comune in 2021, zero official samples within 10 km since 2022.
+Deferred, with recorded reasons: parametric insurance triggers (our own identifiability and sampling-collapse findings make triggers gameable), marketplace transaction fees (supply-capped, politically toxic post-scandal). Heritage-tree triage is unblocked: the LR 14/2007 registry is a public queryable layer (`Operationals/UliviMonumentali`, 341,428 points with foglio/particella) and feeds Wedge 1's Art. 7(3) derogation rule. Exemplar member context: Cantine Amalberga (Ostuni) — 1,516 olive positives in the comune in 2021, zero official samples within 10 km since 2022.
 
 ## Work order (post-pivot, 16 Aug 2026)
 
@@ -28,27 +28,42 @@ Deferred, with recorded reasons: parametric insurance triggers (our own identifi
 2. **Wedge 2 design: participatory phenotyping protocol + schema**, pooled with the conversion cohort; outreach package for CNR-IPSP/BeXyl (decoder v1 + Frantoio finding + protocol).
 3. **Cultivar analysis upgrade** (SINTOMO severity outcome, distance-to-positive control, orthophoto survival when the mortality layer exists) — feeds Wedge 2 and unlocks the cultivar table.
 4. **Orthophoto mortality layer** (2019→2022/23 canopy loss, Ostuni–Fasano belt) — the 2022–25 damage record nobody else has; feeds exposure briefs and Wedge 2.
-5. **Held assets, awaiting Owen decisions:** Murge brief (unsent), license-confirmation note (unsent), accesso civico requests (LR 14/2007 registry; 2026 adult-treatment determina), pilot channel choice.
+5. **Held assets, awaiting Owen decisions:** Murge brief (unsent), license-confirmation note (unsent), accesso civico request for the 2026 adult-treatment determina (modeled meanwhile as `act_not_located_as_of` 2026-08-16), pilot channel choice.
 
-Completed and standing: Playbook v0.1 (regulatory module), exposure engine + Amalberga demo, front-rate analysis (2022–25 unidentifiable → scenario bands), Murge analysis, conversion engine (Frantoio RR 0.348 p 0.005; Leccino gate internal), decoder v1.
+Completed and standing: Playbook v0.1 (regulatory module; §5 pending update to DGR 1075 del 29/07/2025, the Piano d'azione 2025-2027 of record), exposure engine + Amalberga demo, front-rate analysis (2022–25 unidentifiable from CAMP alone; now testable with decree-versioned zone layers, BURP acts, and planned-effort annexes), Murge analysis, conversion engine (Frantoio RR 0.348 p 0.005; Leccino gate internal), decoder v1.
 
 ## Data and rights
 
 12 official campaign workbooks 2013–2025 (~1.3M tree-level records, coordinates, cultivar, symptom, result; SUBSPECIE from 2024). Commercial reuse lawful: CAD art. 52(2) open-by-default; CKAN twin CC-BY-4.0; attribute "Regione Puglia — Sezione Osservatorio fitosanitario" and send a one-line confirmation note. Copernicus Sentinel data free including commercial. Crecco OQDS-Insight CC BY 4.0 (points/labels; do not redistribute WV2 rasters). Puglia orthophotos IODL 2.0 (verify per-vintage before shipping chips).
 
-## Red lines (binding, from S8)
+## Constraints, gates, and strategy decisions
 
-- No tree-level previsual-detection claims from any satellite product. This project closed four pre-registered designs negative (A0/A1/A2/A7; `nowcast/NEGATIVE.md`). Block-scale canopy-condition trend is the only satellite formulation, cause-agnostic, and gated on Crecco-box validation.
-- Testing intensity co-equal with positivity; zero tests = no information, never low risk.
-- Survivorship: positives are felled by law; silence after a positive is not remission.
-- Survey-design annotation on every time series; no prevalence claims inside the infected zone.
-- Page 1 of anything sold: private analysis of public data; not the Osservatorio; not a diagnosis or certification.
-- No product/dose prescription, no injunction legal advice, no neighbor identification.
-- Computational only; no cultures, no plant/insect movement, no AMP/phage synthesis.
+Three categories. Hard constraints persist until law, safety, or authority changes. Evidence gates open when a named gate passes. Strategy decisions carry reopen criteria, not bans.
 
-## Killed
+### Hard constraints
 
-Farmer-paid Xf SaaS, sensors, dashboards, labels, insurance; arrival-date points; "Xylella-free" certification; premature cultivar rankings; ST1 fear-selling; decoder v2 as a loss lever; Schneider re-runs; the 5.18 km/yr anchor. Full list: `queries/telos-synthesis.md`.
+- Not the Osservatorio. No official phytosanitary certification without delegated authority. Page 1 of anything sold: private analysis of public data; not a diagnosis.
+- Team activity is computational: no cultures, no plant or insect movement, no AMP/phage synthesis. Partner laboratory and agronomic workflows integrate freely.
+- Provenance and source state are never fabricated. No result is presented stronger than the sampling and design support.
+- Testing intensity is co-equal with positivity: zero tests = no information, never low risk.
+- Survivorship: positives are felled by law; silence after a positive is not remission. Survey-design annotation rides every time series.
+- ST1 and other-subspecies analysis is done when relevant, never sensationalized.
+
+### Evidence gates (currently closed; reopen when the named gate passes)
+
+- Tree-level previsual detection claims: closed by four pre-registered negative designs on free Sentinel-2 (A0/A1/A2/A7; `nowcast/NEGATIVE.md`). Reopens only for a measurement that passes an equivalent pre-registered validation (crown-scale SWIR, airborne hyperspectral/thermal). Block-scale canopy-condition trend remains cause-agnostic and gated on Crecco-box validation.
+- Cultivar rankings: gate = the method recovers a known resistance phenotype on an appropriate outcome (Leccino direction correct, preregistered bar missed; Frantoio signal banked; upgrades: severity outcomes, time-at-risk, exposure controls, orthophoto survival).
+- Prevalence estimates inside the infected zone: gate = a defensible sampling-design estimator for risk-targeted monitoring.
+- Arrival-time estimates: gate = an identifiable post-2021 front (now testable with decree-versioned zone layers, BURP acts, and planned-effort annexes).
+
+### Strategy decisions (deprioritized, with reopen criteria)
+
+Farmer-paid SaaS, sensors, dashboards, labels, insurance, marketplace fees; decoder v2 as a loss lever; Schneider re-runs; the 5.18 km/yr anchor. Reopen on demonstrated willingness-to-pay, partner-supplied ground truth, or a changed evidence base. Full record: `queries/telos-synthesis.md`.
+
+### Product conduct (Wedge 1)
+
+- The product computes and reproduces source-cited official requirements — measures, eligibility conditions, windows, authorized treatments as published in acts. It is not marketed as legal counsel and generates no individualized litigation strategy or invented treatment advice.
+- Owner names from official acts are sourced identity fields under role- and purpose-based controls; masked in public demos. Product doctrine sign-off: `wedge1-aip/DOMAIN_DECISIONS.md`.
 
 ## Standing scientific record
 
