@@ -2,7 +2,7 @@
 
 Status: current program, 16 August 2026
 Owner: Owen Wassmer + Connor
-Workspace: ~/Desktop/Connor/olive-xylella/ · Remote: github.com/owassmer/olive-xylella (private)
+Workspace: ~/Desktop/Connor/olive-xylella/ · Remote: github.com/owassmer/olive-xylella (public; owner identity masked before push)
 
 ## Objective
 
@@ -14,7 +14,7 @@ North star: a **Resilience Operating System** for the Apulian olive economy — 
 
 Execution is by wedge, not by platform build:
 
-1. **Eligibility & collective-application engine** — parcel in → zone status, applicable measures, deadline calendar, pre-filled dossier skeleton out, every field citing its decree. Licensed to coops/OPs/CAAs (we tool the dossier work; we do not practice consultancy). Attacks the verified binding constraint: €222M demand vs €80M funds, silent portal deadlines, position 3,758 of 9,186 six years in.
+1. **Eligibility & collective-application engine** — parcel in → zone status, applicable measures, deadline calendar, pre-filled dossier skeleton out, every field citing its decree. Licensed to coops/OPs/CAAs (we tool the dossier work; we do not practice consultancy). Attacks the verified binding constraint: €222M demonstrated demand against a versioned Art. 6 envelope (current state owned by `wedge1-aip/DOMAIN_DECISIONS.md` §D-2), silent portal deadlines, and the administrative path from ranked application to verified field action.
 2. **Participatory phenotyping & recovery network** — protocol + schema pooling coop plantings and Salento recovery observations with the 16,771-coordinate conversion cohort. The outreach vehicle to CNR-IPSP/BeXyl; arrives with data (Frantoio RR 0.348, p 0.005; decoder v1), not a pitch.
 3. **Partnership layer** — Planetek/DTA own "see"; we own "decide under legal and financial constraints". Verified context (`queries/telos-pivot-verification.md`): FIXYLL (ASI, Planetek + DTA + UNAPROL) ended 18 Jun 2025 with no commercial product — the conversation is about the post-project gap, and the compliance-verification buyer is the Osservatorio/ARIF. REACH-XY (€15M MUR, CNR-led, 2023–2027) is the research umbrella: a duplication risk for decoder-style work and the address for Wedge 2. Contact after a Wedge-1 demo.
 
