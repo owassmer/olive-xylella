@@ -63,3 +63,11 @@
 
 - entities: xylella-fastidiosa, philaenus-spumarius, leccino, cnr-ipsp
 - concepts: oqds, resistance-not-immunity, previsual-detection, front-nowcast, resistance-decoder, puglia-monitoring, camp-csv
+
+## [2026-08-15] write | Resistance decoder challenge brief
+
+- queries/resistance-decoder-challenge.md — cited challenge to Leccino ceiling + AMP/phage paper-only
+- Sources: local pymupdf extracts of Giampetruzzi 2016, La Notte 2024, Surano 2022, Pavan 2021, Sabri 2024; Cara 2026 Phi1/Phi3; Moll 2021 AMPs
+- Cultivar ceiling: no named commercial beat; S105/S215 seedlings beat parental Leccino on canopy
+- Locks: computational-only and do-not-synthesize survive; “paper-only literature” and “Leccino is a finished genotype ceiling” do not
+- Not the decoder v0 table (still needs Additional file 3, La Notte Suppl. S4, De Donno locus tags)

@@ -1,4 +1,11 @@
 # regenerable bulk
+pitch/
+raw/*
+# the repo tracks curated text extracts under these; the per-type rules below still apply
+!raw/articles/
+!raw/data/
+!raw/extracts/
+!raw/papers/
 raw/data/*.csv
 raw/data/*.xlsx
 raw/data/camp_xlsx/
