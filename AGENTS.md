@@ -31,7 +31,7 @@ Reduce the projected economic loss from *Xylella fastidiosa* by any legal comput
 
 ## Evidence spine
 
-Git. Ignore bulky raw dumps (`.gitignore`). Track inventories, schemas, scripts, wiki, briefs. Remote: `https://github.com/owassmer/olive-xylella` (private).
+Git. Ignore bulky raw dumps (`.gitignore`). Track inventories, schemas, scripts, wiki, briefs. Remote: `https://github.com/owassmer/olive-xylella` (public). Owner identity is masked before anything is pushed: a name published in an official act stays personal data, and joining it to a parcel, an order, and coordinates builds a profile no single act carries.
 
 ## Day-1 gate
 
